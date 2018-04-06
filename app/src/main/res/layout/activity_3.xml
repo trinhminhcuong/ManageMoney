@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abd2e3"
+    android:layout_centerVertical="true"
+    tools:context="com.example.cuong.manage.Activity3">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/relativeLayout3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edDay"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:hint="day"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/edMonth"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:hint="month"
+                android:textSize="15dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/edYear"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:hint="year"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_marginTop="15dp"
+            android:id="@+id/spinnerType"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:textSize="20dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rdChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi"
+                android:textSize="20dp"/>
+        </RadioGroup>
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/spinnerType"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"></Spinner>
+        <EditText
+            android:id="@+id/edAmount"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/spinnerCategory"
+            android:hint="Số tiền"
+            android:textAlignment="center"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btnInsertActivity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Thêm"
+            android:textColor="#ffffff"
+            android:background="#33526f" />
+        <TextView
+            android:id="@+id/tvTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

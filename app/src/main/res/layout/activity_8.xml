@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cuong.manage.Activity8">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9e2e2">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn ngày bắt đầu:"/>
+            <EditText
+                android:id="@+id/edDay8"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="day"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+            <EditText
+                android:id="@+id/edMonth8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:hint="month"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+            <EditText
+                android:id="@+id/edYear8"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="year"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnThongKe8"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            android:layout_marginTop="60dp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listviewBlog8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout8"/>
+
+</RelativeLayout>

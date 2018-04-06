@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cuong.manage.Activity6">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9e2e2">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edMonth6"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:hint="month"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+            <EditText
+                android:id="@+id/edYear6"
+                android:textAlignment="center"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:hint="year"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnThongKe6"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            android:layout_marginTop="60dp" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnThongKe6"
+            android:orientation="vertical"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/tvInCome6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/tvOutCome6"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listviewBlog6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout4"/>
+
+</RelativeLayout>
